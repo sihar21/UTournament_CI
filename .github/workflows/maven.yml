@@ -25,7 +25,9 @@ jobs:
         cache: maven
     - name: Running Checkstyle
       run: mvn checkstyle:checkstyle
-    - name: Test with Maven
+    - name: Unit test with Maven
       run: mvn test
+    - name: Integration test with Maven
+      run: mvn verify -Pintegration
 
    
