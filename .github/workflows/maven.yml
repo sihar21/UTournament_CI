@@ -29,5 +29,9 @@ jobs:
       run: mvn test
     - name: Integration test with Maven
       run: mvn verify -Pintegration
+    - name: End2End test with Maven
+      run: mvn verify -Pend2end
+    - name: Acceptance test with Maven
+      run: mvn verify -Pacceptance
 
    
